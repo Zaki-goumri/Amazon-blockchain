@@ -1,4 +1,4 @@
-# Dappazon
+# Amazon Clone
 
 ## Technology Stack & Tools
 
