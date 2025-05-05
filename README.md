@@ -1,31 +1,54 @@
-# Amazon Clone
+# Amazon Blockchain
 
-## Technology Stack & Tools
+> A decentralized platform leveraging blockchain technology to manage and authenticate Amazon orders, ensuring transparency, security, and trust.
 
-- Solidity (Writing Smart Contracts & Tests)
-- Javascript (React & Testing)
-- [Hardhat](https://hardhat.org/) (Development Framework)
-- [Ethers.js](https://docs.ethers.io/v5/) (Blockchain Interaction)
-- [React.js](https://reactjs.org/) (Frontend Framework)
+📄 **Conception Document**: [Until be ready](#conception-document)
 
-## Requirements For Initial Setup
-- Install [NodeJS](https://nodejs.org/en/)
+---
 
-## Setting Up
-### 1. Clone/Download the Repository
+## 🚀 Overview
 
-### 2. Install Dependencies:
-`$ npm install`
+**Amazon Blockchain** integrates blockchain technology with traditional e-commerce platforms to manage and authenticate orders. By utilizing decentralized networks, it ensures that all transactions are secure, transparent, and tamper-proof. This platform allows both sellers and buyers to interact in a trustless environment while benefiting from the core advantages of blockchain: transparency, immutability, and security.
 
-### 3. Run tests
-`$ npx hardhat test`
+---
 
-### 4. Start Hardhat node
-`$ npx hardhat node`
+## 🧱 Tech Stack
 
-### 5. Run deployment script
-In a separate terminal execute:
-`$ npx hardhat run ./scripts/deploy.js --network localhost`
+- **Blockchain**: Ethereum (Solidity for smart contracts)
+- **Smart Contract Framework**: [Hardhat](https://hardhat.org/)
+- **Testing**: [Mocha](https://mochajs.org/)
+---
 
-### 6. Start frontend
-`$ npm run start`
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js
+- Docker (for containerized deployment)
+- Ethereum testnet (Sepolia, Rinkeby, etc.) for contract deployment
+
+### Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/Zaki-goumri/amazon-blockchain.git
+cd amazon-blockchain
+# Deploy smart contracts
+cd blockchain
+npx hardhat run scripts/deploy.js --network sepolia
+
+```
+## 🌐 Blockchain Integration
+- Smart Contracts: Manage and authenticate orders via Ethereum smart contracts. These contracts are responsible for transaction verification, ensuring that each order placed on the platform is securely recorded on the blockchain.
+
+- Transaction Tracking: All transactions, including order placements and status updates, are recorded and verified on the blockchain. This provides a transparent, immutable history of all interactions with the platform.
+
+- Order Management: Orders are created and managed directly on the blockchain, with smart contracts ensuring the integrity and authenticity of the order information. Each order's status is tracked on-chain.
+
+## 📘 What I've learnt
+
+- Integrating blockchain technology with traditional e-commerce systems
+
+- Smart contract development with Solidity and Hardhat
+
+- Writing unit and e2e tests for blockchain functionalities
